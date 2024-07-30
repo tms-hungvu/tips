@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        
+        .first-child {
+            display: flex;
+        }
+        .child-overfow-x {
+            
+            background: blue;
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+           
+        }
+        .child-overfow-x img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+        .first-child div:first-child {
+            background: red;
+            width: 100px;
+        }
+        .first-child span {
+            word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+    </style>
+    <div class="parent">
+        <div class="first-child">
+            <div>
+               <span> 12323ddddddddddddddddddddddddddddddddddddddddddd213333</span>
+            </div>
+
+            <div class="child-overfow-x">
+                <img src="https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/hinh-anh-thien-nhien-3d-dep-006.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg" alt="" class="">
+                <img src="https://i.pinimg.com/736x/30/6c/b8/306cb88d7add2f82a561f674b407084f.jpg" alt="" class="">
+            </div>
+        </div>
+        <div class="second-child">2</div>
+        <div class="third-child">3</div>
+    </div>
+</body>
+</html>

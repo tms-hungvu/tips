@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .parent {
+            display: flex;
+            gap: 10px;
+            height: 100vh;
+        }
+        .child-first {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+        .child-title {
+             background: blue;
+        }
+        .child-title img {
+            object-fit: cover;
+            width: 100%;
+            height: 100px;
+        }
+        .child-title span{
+            font-size: 11px;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+        .child-overflow-y {
+            background: red;
+            height: 100%;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .child-overflow-y img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .child-overflow-y>div {
+            margin: 10px 0px;
+        }
+        .child-overflow-y>div:last-child {
+            margin-bottom: 0px !important;
+        }
+        /************************************************************************************************************/
+
+        .child-second {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /***********************************************************************************************************/
+        .child-third {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <div class="parent">
+        <div class="child-first">
+            <div class="child-title">
+                <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" alt="" class="">
+                <span> eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+            </div>
+            <div class="child-overflow-y"> 
+                <div> <img src="https://img.pikbest.com/ai/illus_our/20230418/64e0e89c52dec903ce07bb1821b4bcc8.jpg!w700wp" alt="" class=""></div>
+
+                <div> <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/428059e47aeafb68640f168d615371dc-65a11b038315c880-1706156293087602824781.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBLupFS4FCe37F94_2o7jtmk4QYL1H4v_y5u3Z5tqDaoX7d_vYu8z2utR1BvpxeQ_Q_E&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474115ccF/anh-nen-cay-xanh-cho-dien-thoai_103834301.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66wItjhNjMOJVSO0SVGrzP78vVCCe33V59wG9wI544BiQUU7KapTzES940oxcBY7lw9U&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://mega.com.vn/media/news/1706_hinh-nen-dien-thoai-4k125.jpg" alt="" class=""></div>
+            </div>
+        </div>
+        <div class="child-second">
+           
+            <div class="child-title">
+                <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" alt="" class="">
+                <span> eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+            </div>
+            <div class="child-overflow-y"> 
+                <div> <img src="https://img.pikbest.com/ai/illus_our/20230418/64e0e89c52dec903ce07bb1821b4bcc8.jpg!w700wp" alt="" class=""></div>
+
+                <div> <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/428059e47aeafb68640f168d615371dc-65a11b038315c880-1706156293087602824781.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBLupFS4FCe37F94_2o7jtmk4QYL1H4v_y5u3Z5tqDaoX7d_vYu8z2utR1BvpxeQ_Q_E&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474115ccF/anh-nen-cay-xanh-cho-dien-thoai_103834301.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66wItjhNjMOJVSO0SVGrzP78vVCCe33V59wG9wI544BiQUU7KapTzES940oxcBY7lw9U&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://mega.com.vn/media/news/1706_hinh-nen-dien-thoai-4k125.jpg" alt="" class=""></div>
+            </div>
+            <div class="child-title">
+                <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" alt="" class="">
+                <span> eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+            </div>
+        </div>
+
+
+        <div class="child-third">
+            <div class="child-overflow-y"> 
+                <div> <img src="https://img.pikbest.com/ai/illus_our/20230418/64e0e89c52dec903ce07bb1821b4bcc8.jpg!w700wp" alt="" class=""></div>
+
+                <div> <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/428059e47aeafb68640f168d615371dc-65a11b038315c880-1706156293087602824781.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBLupFS4FCe37F94_2o7jtmk4QYL1H4v_y5u3Z5tqDaoX7d_vYu8z2utR1BvpxeQ_Q_E&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474115ccF/anh-nen-cay-xanh-cho-dien-thoai_103834301.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66wItjhNjMOJVSO0SVGrzP78vVCCe33V59wG9wI544BiQUU7KapTzES940oxcBY7lw9U&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://mega.com.vn/media/news/1706_hinh-nen-dien-thoai-4k125.jpg" alt="" class=""></div>
+            </div>
+            <div class="child-overflow-y"> 
+                <div> <img src="https://img.pikbest.com/ai/illus_our/20230418/64e0e89c52dec903ce07bb1821b4bcc8.jpg!w700wp" alt="" class=""></div>
+
+                <div> <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/428059e47aeafb68640f168d615371dc-65a11b038315c880-1706156293087602824781.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBLupFS4FCe37F94_2o7jtmk4QYL1H4v_y5u3Z5tqDaoX7d_vYu8z2utR1BvpxeQ_Q_E&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474115ccF/anh-nen-cay-xanh-cho-dien-thoai_103834301.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66wItjhNjMOJVSO0SVGrzP78vVCCe33V59wG9wI544BiQUU7KapTzES940oxcBY7lw9U&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://mega.com.vn/media/news/1706_hinh-nen-dien-thoai-4k125.jpg" alt="" class=""></div>
+            </div>
+            <div class="child-overflow-y"> 
+                <div> <img src="https://img.pikbest.com/ai/illus_our/20230418/64e0e89c52dec903ce07bb1821b4bcc8.jpg!w700wp" alt="" class=""></div>
+
+                <div> <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/428059e47aeafb68640f168d615371dc-65a11b038315c880-1706156293087602824781.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBLupFS4FCe37F94_2o7jtmk4QYL1H4v_y5u3Z5tqDaoX7d_vYu8z2utR1BvpxeQ_Q_E&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/474115ccF/anh-nen-cay-xanh-cho-dien-thoai_103834301.jpg" alt="" class=""></div>
+
+
+                <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66wItjhNjMOJVSO0SVGrzP78vVCCe33V59wG9wI544BiQUU7KapTzES940oxcBY7lw9U&usqp=CAU" alt="" class=""></div>
+
+                <div> <img src="https://mega.com.vn/media/news/1706_hinh-nen-dien-thoai-4k125.jpg" alt="" class=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
